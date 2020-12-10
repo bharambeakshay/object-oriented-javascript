@@ -1,9 +1,19 @@
+/*******************************************************************************************************
+ * @problem : Json objects of rice, pulses and wheat,  calculate total from price and weight
+ * @fileName : InventoryManagementBusinessLogic.js
+ * @Auther  : Akshay B 
+ *******************************************************************************/
+
 fs = require('fs');
 class Inventory {
     constructor() {
         this.content = null;
         this.fileName = null;
     }
+    /* @description: jsonParse
+    * @purpose: it reads json file from given adress and convert it to script obj.
+    * @param { data }, which has data information.
+    */
 
     jsonParse(fileName) {
         this.fileName = fileName;
@@ -13,6 +23,12 @@ class Inventory {
     display() {
         console.log(this.content.Grains);
     }
+
+    /* @description : value
+    * @purpose:   it calculate value of inventory
+    * @param {data}, which has data information.
+    */
+
 
     value() {
         let sum = 0;
@@ -39,6 +55,10 @@ class Inventory {
         console.log('total value of inventories ' + sum + "rs");
     }
 
+    /* @description : addCategory
+    * @purpose:  it creat category(empty array).
+    * @param {data}, which has data information.
+    */
     addCategory(category = null) {
 
         this.content.Grains[category] = [];
