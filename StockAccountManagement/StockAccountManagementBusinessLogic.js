@@ -1,3 +1,15 @@
+/******************************************************************************************************
+* @purpose  :  Ask data from user to store stock in json file,
+                data: share (name,price and value);
+                read and write the json file.
+* 	  
+* 	
+*  @Auther   : Akshay
+*  @File     : StackAccountManagementBusinessLogic.js 
+*  
+************************************************************************************************/
+
+
 
 const fs = require('fs');
 class Share {
@@ -36,7 +48,7 @@ class Share {
         this.content.Stock.forEach(element => {
             console.log(element.name + '  is rs  ' + element.price * element.numberofshares);
         });
-      
+
         console.log('total value of stocks ' + stockSum + "rs");
     }
     /*

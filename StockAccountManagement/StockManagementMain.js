@@ -1,3 +1,18 @@
+/******************************************************************************************************
+* @purpose  :  Ask data from user to store stock in json file,
+                data: share (name,price and value);
+                read and write the json file.
+                This file reads user input and provides output
+
+    
+* 	  
+* 	
+*  @Auther   : Akshay
+*  @File     : StackAccountManagementMain.js 
+*  
+************************************************************************************************/
+
+
 const readline = require('readline-sync');
 const stockAccountMan = require('./StockAccountManagementBusinessLogic');
 let stock = new stockAccountMan();
