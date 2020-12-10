@@ -1,0 +1,84 @@
+
+//Menu driven program
+//wheat rice pulses
+//create objects of wheat rice and pulses 3 items each
+let rice = {
+    "name": "Basmati",   // take from user
+    "weight": "30",
+    "price": "12",
+};
+//calculate total = weight *price;
+rice.total = rice.weight * rice.price;
+// push price name total weight to json file
+
+//fs-->read file
+const fs = require('fs');
+const inventoryManagementData = fs.readFileSync('/InventoryManagement.json');
+
+// let riceData;
+let riceName = inventoryManagementData.rice.name
+let riceWeight = inventoryManagementData.rice.weight
+let ricePrice = inventoryManagementData.rice.price
+let totalRiceCal = rice.weight * rice.price;
+// 3 properties with function for each, Inheritence
+
+
+
+
+//////////////////
+{
+    "Rice": [
+        {
+            "name": "Basmati",
+            "weight": 589,
+            "price": 50
+        },
+        {
+            "name": "KaliMucchh",
+            "weight": 25,
+            "price": 15
+        },
+        {
+            "name": "Daawat",
+            "weight": 25,
+            "price": 18
+        }
+    ],
+    "Wheats": [
+        {
+            "name": "BreadWheat",
+            "weight": 22,
+            "price": 44
+        },
+        {
+            "name": "DurumWheat",
+            "weight": 3,
+            "price": 55
+        },
+        {
+            "name": "Aashirvad",
+            "weight": 4,
+            "price": 66
+        }
+    ],
+    "Pulses": [
+        {
+            "name": "KidneyBeans",
+            "weight": 15,
+            "price": 45
+        },
+        {
+            "name": "LimaBeans",
+            "weight": 20,
+            "price": 60
+        },
+        {
+            "name": "BroadBeans",
+            "weight": 25,
+            "price": 77
+        }
+    ]
+   
+}
+
+

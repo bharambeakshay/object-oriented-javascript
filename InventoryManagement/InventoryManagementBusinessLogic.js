@@ -59,4 +59,4 @@ class Inventory {
     }
 }
 
-module.exports = { Inventory };
+module.exports = Inventory;
