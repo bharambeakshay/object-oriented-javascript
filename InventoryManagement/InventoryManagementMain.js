@@ -1,4 +1,4 @@
-const Inventory = require('./InventoryManagementBusinessLogic');
+const inventory = require('./InventoryManagementBusinessLogic');
 let invent = new Inventory();
 invent.jsonParse('InventoryManagement/InventoryManagement.json');
 invent.display();
