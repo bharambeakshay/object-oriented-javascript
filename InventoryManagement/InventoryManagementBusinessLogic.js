@@ -31,28 +31,28 @@ class Inventory {
 
 
     value() {
-        let sum = 0;
-        let sum1 = 0;
+        let total = 0;
+        let riceSum = 0;
         this.content.Grains.rice.forEach(element => {
-            sum1 = sum1 + element.price * element.weight
+            riceSum = riceSum + element.price * element.weight
 
         });
-        let sum2 = 0;
+        let whaetSum = 0;
         this.content.Grains.wheat.forEach(element => {
-            sum2 = sum2 + element.price * element.weight
+            whaetSum = whaetSum + element.price * element.weight
 
         });
-        let sum3 = 0;
+        let pulsesSum = 0;
         this.content.Grains.pulse.forEach(element => {
-            sum3 = sum3 + element.price * element.weight
+            pulsesSum = pulsesSum + element.price * element.weight
 
         });
 
-        sum = sum1 + sum2 + sum3;
-        console.log('total value of rice ' + sum1 + "rs");
-        console.log('total value of wheat ' + sum2 + "rs");
-        console.log('total value of pulse ' + sum3 + "rs");
-        console.log('total value of inventories ' + sum + "rs");
+        total = riceSum + whaetSum + pulsesSum;
+        console.log('total value of rice ' + riceSum + "rs");
+        console.log('total value of wheat ' + whaetSum + "rs");
+        console.log('total value of pulse ' + pulsesSum + "rs");
+        console.log('total value of inventories ' + total + "rs");
     }
 
     /* @description : addCategory
