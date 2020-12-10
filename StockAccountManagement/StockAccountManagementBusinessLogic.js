@@ -36,9 +36,7 @@ class Share {
         this.content.Stock.forEach(element => {
             console.log(element.name + '  is rs  ' + element.price * element.numberofshares);
         });
-        // console.log(' value of  ' + this.content.Stock[0].name + "  is rs " + this.content.Stock[0].price * this.content.Stock[0].numberofshares);
-        // console.log(' value of  ' + this.content.Stock[1].name + "  is rs " + this.content.Stock[1].price * this.content.Stock[1].numberofshares);
-        // console.log(' value of  ' + this.content.Stock[2].name + "  is rs " + this.content.Stock[2].price * this.content.Stock[2].numberofshares);
+      
         console.log('total value of stocks ' + stockSum + "rs");
     }
     /*
