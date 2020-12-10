@@ -1,3 +1,10 @@
+/*******************************************************************************************************
+ * @problem :  write a program using array to distribute cards amongst 4 players
+ * @fileName : ArrayBeckBusinessLogic.js
+ * @Auther  : Akshay B 
+ *******************************************************************************/
+
+
 class DeckOfCards {
     constructor() {
         this.suits = ["Clubs", "Diamonds", "Hearts", "Spades"];
@@ -6,6 +13,11 @@ class DeckOfCards {
     }
 }
 class Shuffle extends DeckOfCards {
+
+    /* @description: card() is used to take DeckOfCards and shuffle them to distribute amongst players
+    * @purpose: it reads  array data from deck of cards 
+    * 
+    */
 
     cards() {
 
