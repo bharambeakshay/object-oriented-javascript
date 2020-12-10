@@ -1,0 +1,8 @@
+{
+  "Stock": [
+    { "name": "tata", "numberofshares": "10", "price": "150" },
+    { "name": "bajaj", "numberofshares": "10", "price": "500" },
+    { "name": "reliance", "numberofshares": "10", "price": "50" }
+  ],
+  "google": [{ "name": "chrome", "numberofshares": "10", "price": "10" }],
+  
