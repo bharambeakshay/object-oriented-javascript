@@ -1,0 +1,44 @@
+{
+    "Grains": {
+        "rice": [{
+            "name": "dawat",
+            "weight": "10",
+            "price": "50"
+        }, {
+            "name": "Indiagate",
+            "weight": "10",
+            "price": "100"
+        }, {
+            "name": "brown",
+            "weight": "10",
+            "price": "200"
+        }],
+        "wheat": [{
+            "name": "ashirvad",
+            "weight": "10",
+            "price": "50"
+        }, {
+            "name": "local",
+            "weight": "10",
+            "price": "30"
+        }, {
+            "name": "polished",
+            "weight": "10",
+            "price": "200"
+        }],
+        "pulse": [{
+            "name": "beans",
+            "weight": "10",
+            "price": "50"
+        }, {
+            "name": "peas",
+            "weight": "10",
+            "price": "100"
+        }, {
+            "name": "lupin",
+            "weight": "10",
+            "price": "100"
+        }]
+       
+    }
+}
