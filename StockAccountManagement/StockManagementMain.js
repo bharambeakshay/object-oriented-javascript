@@ -26,6 +26,7 @@ while (flag) {
             console.log("Printing the report: ");
             stock.printReport();
             break;
+
         case 3:
             console.log("printing values: ")
             stock.value();
@@ -33,7 +34,8 @@ while (flag) {
 
         case 4:
             flag = false;
-            process.exit(1)
+            process.exit(1);
+
         default:
             console.log('wrong choice');
     }
