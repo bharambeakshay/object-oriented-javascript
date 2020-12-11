@@ -55,7 +55,7 @@ class Share {
      * @param {data}, which has data information. 
      */
 
-    stockAccount(category = null) {
+    stockAccount() {
 
         this.content.Stock[this.content.Stock.length] = [];
 
@@ -83,7 +83,7 @@ class Share {
      * @param {data}, which has data information. 
      */
     save() {
-        fs.writeFileSync(this.fileName, JSON.stringify(this.content));
+        fs.writeFileSync(this.fileName, JSON.stringify(this.content),);
     }
 }
 
