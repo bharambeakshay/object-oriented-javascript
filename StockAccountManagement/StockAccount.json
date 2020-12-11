@@ -2,7 +2,8 @@
   "Stock": [
     { "name": "tata", "numberOfShares": "10", "price": "150" },
     { "name": "bajaj", "numberOfShares": "10", "price": "500" },
-    { "name": "reliance", "numberOfsSares": "10", "price": "50" }
+    { "name": "reliance", "numberOfShares": "10", "price": "50" }
   ],
-  "google": [{ "name": "old", "numberOfShares": "10", "price": "10" }]
+  "google": [{ "name": "old", "numberOfShares": "10", "price": "10" }],
+  "akshay": [{ "name": "himalaya", "numberOfShares": "11", "price": "11" }]
 }
