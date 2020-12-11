@@ -29,11 +29,8 @@ class Share {
     }
     printReport() {
         console.log(this.content);
-        // this.content.forEach(element => {
-        //     console.log(element);
-
-        // });
     }
+
     /*
      * @description : value
      * @purpose:   it calculate value of inventory
@@ -53,7 +50,7 @@ class Share {
     }
     /*
      * @description : stockAccount
-     * @purpose:  it creat category(empty array).
+     * @purpose:  it create category(empty array).
      * @param {data}, which has data information. 
      */
 
