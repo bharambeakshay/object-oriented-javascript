@@ -56,7 +56,7 @@ class Share {
 
     stockAccount(category = null) {
 
-        this.content[category] = [];
+        this.content.Stock[this.content.Stock.length] = [];
 
     }
     /*
@@ -64,25 +64,33 @@ class Share {
      * @purpose:   it add elements to account
      * @param {data}, which has data information. 
      */
-    buyShares(category, name, numberOfShares, price) {
+    buyShares(name, numberOfShares, price) {
+        let stock = {
 
-        this.content[category].push({
             "name": name,
             "numberOfShares": numberOfShares,
-            "price": price,
-        })
+            "price": price
 
-    }
 
-    /*
-     * @description : saveFile
-     * @purpose:   it convert script object and save it to json file.
-     * @param {data}, which has data information. 
-     */
-    save() {
-        fs.writeFileSync(this.fileName, JSON.stringify(this.content));
+        }
+        this.content.Stock[this.content.Stock.length] = stock
+        //  ({
+        //     "name": name,
+        //     "numberOfShares": numberOfShares,
+        //     "price": price,
+        // })
+
+        // }
     }
-}
+        /*
+         * @description : saveFile
+         * @purpose:   it convert script object and save it to json file.
+         * @param {data}, which has data information. 
+         */
+        save() {
+            fs.writeFileSync(this.fileName, JSON.stringify(this.content));
+        }
+    }
 // exporting class
 module.exports = Share;
 
