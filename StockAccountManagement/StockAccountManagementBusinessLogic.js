@@ -42,11 +42,11 @@ class Share {
     value() {
         let stockSum = 0;
         this.content.Stock.forEach(element => {
-            stockSum = stockSum + element.price * element.numberofshares
+            stockSum = stockSum + element.price * element.numberOfShares
 
         });
         this.content.Stock.forEach(element => {
-            console.log(element.name + '  is rs  ' + element.price * element.numberofshares);
+            console.log(element.name + '  is rs  ' + element.price * element.numberOfShares);
         });
 
         console.log('total value of stocks ' + stockSum + "rs");
