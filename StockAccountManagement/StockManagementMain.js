@@ -3,10 +3,6 @@
                 data: share (name,price and value);
                 read and write the json file.
                 This file reads user iknput and provides output
-
-    
-* 	  
-* 	
 *  @Auther   : Akshay
 *  @File     : StackManagementMain.js 
 *  
@@ -26,8 +22,8 @@ while (flag) {
         case 1:
             let addCategory = readline.question("enter name of category:");
             let company = readline.question("enter name of company: ");
-            let numberOfShares = readline.question("enter number of shares: ");
-            let price = readline.question("enter price: ");
+            let numberOfShares = readline.questionInt("enter number of shares: ");
+            let price = readline.questionInt("enter price: ");
             stock.stockAccount(addCategory);
             stock.buyShares(addCategory, company, numberOfShares, price);
             stock.save();
