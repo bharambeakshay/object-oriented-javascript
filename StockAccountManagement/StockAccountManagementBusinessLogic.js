@@ -27,7 +27,7 @@ class Share {
         this.content = JSON.parse(fs.readFileSync(fileName));
 
     }
-    
+
     printReport() {
         console.log(this.content);
     }
@@ -75,23 +75,18 @@ class Share {
 
         }
         this.content.Stock[this.content.Stock.length] = stock
-        //  ({
-        //     "name": name,
-        //     "numberOfShares": numberOfShares,
-        //     "price": price,
-        // })
 
-        // }
     }
-        /*
-         * @description : saveFile
-         * @purpose:   it convert script object and save it to json file.
-         * @param {data}, which has data information. 
-         */
-        save() {
-            fs.writeFileSync(this.fileName, JSON.stringify(this.content));
-        }
+    /*
+     * @description : saveFile
+     * @purpose:   it convert script object and save it to json file.
+     * @param {data}, which has data information. 
+     */
+    save() {
+        fs.writeFileSync(this.fileName, JSON.stringify(this.content));
     }
+}
+
 // exporting class
 module.exports = Share;
 
