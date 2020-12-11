@@ -27,6 +27,7 @@ class Share {
         this.content = JSON.parse(fs.readFileSync(fileName));
 
     }
+    
     printReport() {
         console.log(this.content);
     }
