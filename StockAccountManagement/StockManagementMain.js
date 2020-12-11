@@ -19,13 +19,12 @@ while (flag) {
     let choice = readline.questionInt(`enter 1. to buy shares                2. print the shares report      
       3. calculations of stocks       4. exit`)
     switch (choice) {
+        
         case 1:
-            let addCategory = readline.question("enter name of category:");
             let company = readline.question("enter name of company: ");
             let numberOfShares = readline.questionInt("enter number of shares: ");
             let price = readline.questionInt("enter price: ");
-            stock.stockAccount(addCategory);
-            stock.buyShares(addCategory, company, numberOfShares, price);
+            stock.buyShares(company, numberOfShares, price);
             stock.save();
             break;
 
